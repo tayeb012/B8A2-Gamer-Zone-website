@@ -330,14 +330,14 @@ nav>ul>li:hover {
     background-color: #fff;
 }
 
-.multi-btn:hover{
+.multi-btn:hover {
     color: #F948B2;
     border: 1px solid #F948B2;
 }
 
 .btn-img {
-    height:  clamp(1.8rem, 1.625rem + 1.1667vw, 2.5rem);
-    width:  clamp(1.8rem, 1.625rem + 1.1667vw, 2.5rem);
+    height: clamp(1.8rem, 1.625rem + 1.1667vw, 2.5rem);
+    width: clamp(1.8rem, 1.625rem + 1.1667vw, 2.5rem);
 }
 
 .btn-img>img {
@@ -353,7 +353,7 @@ nav>ul>li:hover {
 
 /* <!-- footer part start  --> */
 
-footer{
+footer {
     padding: clamp(1rem, 0.5rem + 3.3333vw, 3rem) clamp(1rem, 0.5rem + 3.3333vw, 3rem);
     display: flex;
     flex-direction: column;
@@ -364,7 +364,7 @@ footer{
     color: #fff;
 }
 
-footer>ul{
+footer>ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -373,11 +373,12 @@ footer>ul{
     font-size: clamp(1rem, 0.875rem + 0.8333vw, 1.5rem);
 }
 
-.social-link{
+.social-link {
     font-size: clamp(1.2rem, 1rem + 1.3333vw, 2rem);
+    padding: 0 clamp(5rem, 3.75rem + 8.3333vw, 10rem);
 }
 
-ul> li:hover{
+ul>li:hover {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -385,7 +386,8 @@ ul> li:hover{
     cursor: pointer;
 }
 
-.Terms , small{
+.Terms,
+small {
     text-align: center;
     color: rgba(255, 255, 255, 0.60);
 }
