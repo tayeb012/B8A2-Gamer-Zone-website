@@ -19,11 +19,19 @@
         background-image: url(images/Group\ 14.png);
         background-size: cover;
         background-repeat: no-repeat;
-        width: 90%;
+        width: clamp(12rem, 6.1132rem + 39.2453vw, 25rem);
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: left;
+        align-items: start;
+        padding: clamp(1rem, 0.5472rem + 3.0189vw, 2rem) clamp(1rem, 0.0943rem + 6.0377vw, 3rem) ;
+    }
+
+    /* 1st part of 2nd section  */
+
+    /* 2nd part of 2nd section */
+
+    .games-part{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -32,6 +40,14 @@
 /* 576px */
 
 @media screen and (max-width:576px) {
+
+
+    .ttl{
+        font-size: clamp(1.5rem, 1.375rem + 0.8333vw, 2rem);
+    }
+
+
+
     header{
         /* height: auto; */
         padding: 0 clamp(1rem, -0.4286rem + 9.5238vw, 3rem);
@@ -49,4 +65,41 @@
     .follow{
         width: clamp(10rem, 8.5714rem + 9.5238vw, 12rem);
     }
+
+    .play-like-pic{
+        height: clamp(15rem, 12.5rem + 16.6667vw, 25rem);
+        width: clamp(16rem, 13.5rem + 16.6667vw, 26rem);
+    }
+
+    .the-ttl{
+        font-size: clamp(2.5rem, 2.25rem + 1.6667vw, 3.5rem);
+    }
+
+
+/* 1st part of 2nd section  */
+
+.Online-Games {
+    margin:clamp(1rem, 0rem + 6.6667vw, 5rem) clamp(1.5rem, 0.0714rem + 9.5238vw, 3.5rem);
+}
+
+    /* 2nd part of 2nd section */
+
+    
+    .games{
+        /* height: 10rem; */
+    }
+}
+
+
+@media screen and (max-width:430px){
+
+    .btn{
+        font-size: clamp(0.5rem, 0.1211rem + 2.5263vw, 0.8rem);
+    }
+
+    .games-part{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    
 }
