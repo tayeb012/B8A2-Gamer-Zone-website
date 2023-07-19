@@ -1,6 +1,10 @@
-
-
 /* for desktop view */
+@media screen and (max-width:1025px) {
+    .short-pic {
+        bottom: -2rem;
+        left: -2rem;
+    }
+}
 
 
 
@@ -15,7 +19,8 @@
         background: none;
         /* width: 100%; */
     }
-    .play-like-dtl{
+
+    .play-like-dtl {
         background-image: url(images/Group\ 14.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -23,16 +28,46 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        padding: clamp(1rem, 0.5472rem + 3.0189vw, 2rem) clamp(1rem, 0.0943rem + 6.0377vw, 3rem) ;
+        padding: clamp(1rem, 0.5472rem + 3.0189vw, 2rem) clamp(1rem, 0.0943rem + 6.0377vw, 3rem);
     }
 
     /* 1st part of 2nd section  */
 
     /* 2nd part of 2nd section */
 
-    .games-part{
+    .games-part {
         grid-template-columns: repeat(2, 1fr);
     }
+
+
+    /* 1st part of 3rd section  */
+    .Play-Instantly{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .Play-ttl{
+        text-align: center;
+    }
+    .Play-Instantly-dtl{
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .Play-Instantly-pic{
+        width: 70%;
+        display: flex;
+        justify-content: left;
+    }
+    .short-pic{
+        width: clamp(4rem, 1.283rem + 18.1132vw, 10rem);
+        position: absolute;
+        bottom: -1rem;
+        left: -4rem;
+    }
+
 }
 
 
@@ -42,64 +77,66 @@
 @media screen and (max-width:576px) {
 
 
-    .ttl{
+    .ttl {
         font-size: clamp(1.5rem, 1.375rem + 0.8333vw, 2rem);
     }
 
 
 
-    header{
+    header {
         /* height: auto; */
         padding: 0 clamp(1rem, -0.4286rem + 9.5238vw, 3rem);
-    }    
-    nav{
+    }
+
+    nav {
         flex-direction: column;
     }
-    nav>ul{
+
+    nav>ul {
         margin-top: 1rem;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
     }
 
-    .follow{
+    .follow {
         width: clamp(10rem, 8.5714rem + 9.5238vw, 12rem);
     }
 
-    .play-like-pic{
+    .play-like-pic {
         height: clamp(15rem, 12.5rem + 16.6667vw, 25rem);
         width: clamp(16rem, 13.5rem + 16.6667vw, 26rem);
     }
 
-    .the-ttl{
+    .the-ttl {
         font-size: clamp(2.5rem, 2.25rem + 1.6667vw, 3.5rem);
     }
 
 
-/* 1st part of 2nd section  */
+    /* 1st part of 2nd section  */
 
-.Online-Games {
-    margin:clamp(1rem, 0rem + 6.6667vw, 5rem) clamp(1.5rem, 0.0714rem + 9.5238vw, 3.5rem);
-}
+    .Online-Games {
+        margin: clamp(1rem, 0rem + 6.6667vw, 5rem) clamp(1.5rem, 0.0714rem + 9.5238vw, 3.5rem);
+    }
 
     /* 2nd part of 2nd section */
 
-    
-    .games{
+
+    .games {
         /* height: 10rem; */
     }
 }
 
 
-@media screen and (max-width:430px){
+@media screen and (max-width:430px) {
 
-    .btn{
+    .btn {
         font-size: clamp(0.5rem, 0.1211rem + 2.5263vw, 0.8rem);
     }
 
-    .games-part{
+    .games-part {
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
     }
-    
+
 }
