@@ -240,14 +240,41 @@ nav>ul>li:hover {
     gap: 1rem;
 }
 
+.games {
+    width: 100%;
+}
+
 .games>.game-img {
     width: 100%;
+    display: block;
     border-radius: 4%;
     position: relative;
 }
 
-.fa-circle-play {
-    display: none;
+.overly-text {
+    width: 100%;
+    height:clamp(9rem, -7.8326rem + 34.9767vw, 18.4rem);
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #2f2f2f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 8px;
+    color:#F948B2;
+}
+
+.overly-text:hover{
+    opacity: 0.9;
+}
+
+.fa-circle-play{
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 .games>.game-img>img {
