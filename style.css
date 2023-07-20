@@ -348,6 +348,7 @@ nav>ul>li:hover {
     margin: 1rem 0;
     border: 1px solid #fff;
     background-color: #fff;
+    cursor: pointer;
 }
 
 .multi-btn:hover {
